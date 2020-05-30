@@ -5,8 +5,11 @@
         <div class="card mx-4">
             <div class="card-body p-4">
                 <h1>{{ trans('panel.site_title') }}</h1>
+            
+                <p class="text-muted d-inline">Login</p>
+                <p class="text-muted d-inline">| Register</p>
 
-                <p class="text-muted">{{ trans('global.login') }}</p>
+                <br>
 
                 @if(session('message'))
                     <div class="alert alert-info" role="alert">
