@@ -4,10 +4,7 @@
     <div class="col-md-6">
         <div class="card mx-4">
             <div class="card-body p-4">
-                <h1>{{ trans('panel.site_title') }}</h1>
-            
-                <p class="text-muted d-inline">Login</p>
-                <p class="text-muted d-inline">| Register</p>
+                <h1 style="text-align: center;">Log in to {{ trans('panel.site_title') }}</h1>
 
                 <br>
 
@@ -58,20 +55,27 @@
                             </label>
                         </div>
                     </div>
-
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col text-center">
                             <button type="submit" class="btn btn-primary px-4">
                                 {{ trans('global.login') }}
                             </button>
                         </div>
-                        <div class="col-6 text-right">
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            @if(Route::has('register'))
+                                <a class="btn btn-link px-0" href="{{ route('register') }}">
+                                    {{ trans('global.register_account') }}
+                                </a>
+                            @endif
+                        </div>
+                        <div class="col text-center">
                             @if(Route::has('password.request'))
                                 <a class="btn btn-link px-0" href="{{ route('password.request') }}">
                                     {{ trans('global.forgot_password') }}
-                                </a><br>
+                                </a>
                             @endif
-
                         </div>
                     </div>
                 </form>
