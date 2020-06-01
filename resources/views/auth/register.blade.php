@@ -68,6 +68,15 @@
                             </div>
                         </div>
                     </form>
+                    <div class="form-group row mb-0">
+                        <div class="col-md-3 offset-md-9">
+                            <a href="{{ route('login') }}">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Login') }}
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

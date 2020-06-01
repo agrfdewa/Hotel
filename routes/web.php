@@ -44,3 +44,17 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
 
     Route::resource('transactions', 'TransactionsController')->only(['index']);
 });
+
+Route::get('/user', function(){
+    return view('user');
+});
+
+Route::post('/upateaccount', '\App\Http\Controllers\Admin\UsersController@postSaveUser')->name('account.save');
+
+Route::get('/user', [
+    'uses' => 'UserController@getUser',
+    'as' => 'user'
+]);
+
+Route::get('user', '\App\Http\Controllers\Admin\UsersController@profile');
+Route::post('user', '\App\Http\Controllers\Admin\UsersController@update_avatar'); 

@@ -8,3 +8,4 @@
 - That's it: launch the main URL. 
 - You can login to adminpanel with default credentials __admin@admin.com__ - __password__
 - For Paid bookings, please fill in `.env` with your Stripe credentials
+- Please dont forget to install image intervention => http://image.intervention.io and follow the instruction for laravel installation
