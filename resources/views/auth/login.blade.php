@@ -5,10 +5,12 @@
         <div class="card mx-4">
             <div class="card-body p-4">
                 <h1>{{ trans('panel.site_title') }}</h1>
-            
-                <p class="text-muted d-inline">Login</p>
+                <a href="{{ route('login') }}"></a>
+                <p class="text-muted d-inline" >Login</p>
+                </a>
+                <a href="{{ route('register') }}">
                 <p class="text-muted d-inline">| Register</p>
-
+                </a>
                 <br>
 
                 @if(session('message'))
