@@ -1,4 +1,4 @@
-@extends('layouts.app')
+extends('layouts.app')
 @section('content')
 <div class="row justify-content-center">
     <div class="col-md-6">
@@ -71,36 +71,30 @@
                             </span>
                         </div>
 
-                        <input id="birth_date" type="date" class="form-control @error('birth_date') is-invalid @enderror" name="birth_date
+                        <input id="birth_date" type="date" class="form-control @error('birth_date') is-invalid @enderror" name="birth_date">
                         @error('birth_date')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
                     </div>
-
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-lock fa-fw"></i></span>
                         </div>
-
                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" required placeholder="{{ trans('global.login_password') }}">
-
                         @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
                     </div>
-
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-lock fa-fw"></i></span>
                         </div>
-
                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" required placeholder="{{ trans('global.confirm_password') }}">
                     </div>
-
                     <div class="row">
                         <div class="col text-center">
                             <button type="submit" class="btn btn-primary px-4">
