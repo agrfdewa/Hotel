@@ -105,16 +105,15 @@ class UsersController extends Controller
     
     public function postSaveUser(Request $request)
     {
-      $user = user::find(Auth::user()->id);
+        $this->validate($request, [
+           'name' => 'required|max:120'
+        ]);
 
-      if ($user) {
-          $user->name = $request['name'];
-
-          $user->save();
-          return view('user', array('user' => Auth::user()) );
-      } else {
-          return view('user', array('user' => Auth::user()) );
-      }
+        $user = Auth::user();
+        $old_name = $user->name;
+        $user->name = $request['name'];
+        $user->update();
+        return view('user', array('user' => Auth::user()) );
     }
 
     public function profile(){
