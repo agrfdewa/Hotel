@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "f1578eddb2c5a47c55338138b4a2e5e8",
+=======
+    "content-hash": "3e0ba85eec093aa1ac4fb22f4ca31a20",
+>>>>>>> 4d0450df0502bcf447d87b3b83490bc80d38fea5
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3859,16 +3863,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.28.0",
+            "version": "v7.36.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "618ee7211ee571ba5873650e3a6f4a3f538c8f69"
+                "reference": "80979c8959dff86bf7b0610e44599a67132ebcd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/618ee7211ee571ba5873650e3a6f4a3f538c8f69",
-                "reference": "618ee7211ee571ba5873650e3a6f4a3f538c8f69",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/80979c8959dff86bf7b0610e44599a67132ebcd3",
+                "reference": "80979c8959dff86bf7b0610e44599a67132ebcd3",
                 "shasum": ""
             },
             "require": {
@@ -3878,7 +3882,7 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.15",
+                "friendsofphp/php-cs-fixer": "2.16.1",
                 "php-coveralls/php-coveralls": "^2.1",
                 "phpunit/phpunit": "^5.7",
                 "squizlabs/php_codesniffer": "^3.3",
@@ -3912,7 +3916,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-04-03T19:26:27+00:00"
+            "time": "2020-05-28T18:11:30+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
