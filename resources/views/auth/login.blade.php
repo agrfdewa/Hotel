@@ -4,18 +4,8 @@
     <div class="col-md-6">
         <div class="card mx-4">
             <div class="card-body p-4">
-<<<<<<< HEAD
-                <h1>{{ trans('panel.site_title') }}</h1>
-                <a href="{{ route('login') }}"></a>
-                <p class="text-muted d-inline" >Login</p>
-                </a>
-                <a href="{{ route('register') }}">
-                <p class="text-muted d-inline">| Register</p>
-                </a>
-=======
                 <h1 style="text-align: center;">Log in to {{ trans('panel.site_title') }}</h1>
 
->>>>>>> 4d0450df0502bcf447d87b3b83490bc80d38fea5
                 <br>
 
                 @if(session('message'))
